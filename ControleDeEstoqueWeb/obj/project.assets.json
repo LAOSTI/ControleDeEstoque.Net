@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
       "projectName": "ControleDeEstoqueWeb",
-      "projectPath": "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
+      "projectPath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
       "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueWeb\\obj\\",
+      "outputPath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
