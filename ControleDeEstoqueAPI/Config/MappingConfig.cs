@@ -11,6 +11,10 @@ namespace ControleDeEstoqueAPI.Config
 			var mappingConfig = new MapperConfiguration(config => {
 				config.CreateMap<ProductVO, Product>();
 				config.CreateMap<Product, ProductVO>();
+				config.CreateMap<VendasVO,Vendas>();
+				config.CreateMap<Vendas,VendasVO>();
+				config.CreateMap<ClienteVO,Cliente>();
+				config.CreateMap<Cliente,ClienteVO>();
 			});
 			return mappingConfig;
 		}

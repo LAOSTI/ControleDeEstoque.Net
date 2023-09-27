@@ -2,7 +2,7 @@
 
 namespace ControleDeEstoqueAPI.Repository
 {
-	public interface IVendas
+	public interface IVendasRepository
 	{
 		Task<IEnumerable<VendasVO>> FindAll();
 		Task<VendasVO> FindById(long id);
