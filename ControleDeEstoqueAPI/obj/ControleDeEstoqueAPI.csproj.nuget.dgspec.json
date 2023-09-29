@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj": {}
+    "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj": {
+    "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj",
         "projectName": "ControleDeEstoqueAPI",
-        "projectPath": "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj",
+        "projectPath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj",
         "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alberto\\source\\repos\\ControleDeEstoque\\ControleDeEstoqueAPI\\obj\\",
+        "outputPath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
