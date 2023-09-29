@@ -7,7 +7,7 @@ namespace ControleDeEstoqueAPI.Model.Context
         public MySQLContext(){}
         public MySQLContext(DbContextOptions<MySQLContext> options) : base(options){}
         public DbSet<Product> Products { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Vendas> Vendas { get; set; }
     }
 }

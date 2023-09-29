@@ -6,8 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IProductServices, ProductService>(c =>
-c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"])
-);
+c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
+builder.Services.AddHttpClient<IClienteServices, ClienteService>(c =>
+c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
+builder.Services.AddHttpClient<IVendasService, VendasService>(c =>
+c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
 
 var app = builder.Build();
 

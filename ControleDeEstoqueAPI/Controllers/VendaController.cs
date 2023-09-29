@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeEstoqueAPI.Controllers
 {
-	[Route("api/venda/[controller]")]
+	[Route("api/v1/[controller]")]
 	[ApiController]
 	public class VendaController : ControllerBase
 	{

@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace ControleDeEstoqueAPI.Controllers
 {
-	[Route("api/cliente/[controller]")]
+	[Route("api/v1/[controller]")]
 	[ApiController]
 	public class ClienteController : ControllerBase
 	{
