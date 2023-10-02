@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ControleDeEstoqueWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\Images\\ImagemHome.png",
+      "PackagePath": "staticwebassets\\Images\\ImagemHome.png"
+    },
+    {
+      "Id": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\Images\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\favicon.ico"
+    },
+    {
       "Id": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

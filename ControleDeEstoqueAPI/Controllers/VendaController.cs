@@ -40,7 +40,7 @@ namespace ControleDeEstoqueAPI.Controllers
 		public async Task<ActionResult<VendasVO>> Update(VendasVO vo)
 		{
 			if(vo==null) return BadRequest();
-			var venda = _repository.Update(vo);
+			var venda = await _repository.Update(vo);
 			return Ok(venda);
 		}
 		[HttpDelete]

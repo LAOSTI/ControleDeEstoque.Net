@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tQrl/sXmwxXx2Mh7s9KaPdJwEdEDQ3Ri3ReacoJpQZ4=",
+  "Hash": "AIqkTl+QbxghEunmt+K0w/PBazyoKXqGP7HLdziLrLI=",
   "Source": "ControleDeEstoqueWeb",
   "BasePath": "_content/ControleDeEstoqueWeb",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\Images\\favicon.ico",
+      "SourceId": "ControleDeEstoqueWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\",
+      "BasePath": "_content/ControleDeEstoqueWeb",
+      "RelativePath": "Images/favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\Images\\ImagemHome.png",
+      "SourceId": "ControleDeEstoqueWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\",
+      "BasePath": "_content/ControleDeEstoqueWeb",
+      "RelativePath": "Images/ImagemHome.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ImagemHome.png"
     },
     {
       "Identity": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\js\\site.js",
