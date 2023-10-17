@@ -5,7 +5,8 @@ namespace ControleDeEstoqueAPI.Data.ValueObjects
 {
 	public class ClienteVO
 	{
-		public string name { get; set; }
+        public long Id { get; set; }
+        public string name { get; set; }
 		public string cpf_cnpj { get; set; }
 		public string rg { get; set; }
 		public string rua { get; set; }

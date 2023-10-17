@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDeEstoqueAPI.Migrations
 {
     [DbContext(typeof(MySQLContext))]
-    [Migration("20230929031453_CreateDataBase")]
+    [Migration("20231004030826_CreateDataBase")]
     partial class CreateDataBase
     {
         /// <inheritdoc />

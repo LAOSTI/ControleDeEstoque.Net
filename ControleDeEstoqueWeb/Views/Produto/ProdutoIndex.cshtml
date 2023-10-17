@@ -19,10 +19,16 @@
                     Nome
                 </td>
                 <td>
-                    Categoria
+                    Preço
                 </td>
                 <td>
-                    Preço
+                    Quantidade
+                </td>
+                <td>
+                    Classificação
+                </td>
+                <td>
+                    Marca
                 </td>
             </tr>
         </thead>
@@ -34,10 +40,16 @@
                         @item.Name 
                     </td>
                     <td>
+                        @((item.Price).ToString("c"))
+                    </td>
+                    <td>
+                        @((item.amount).ToString("d"))
+                    </td>
+                    <td>
                         @item.Classification
                     </td>
                     <td>
-                        @((item.Price).ToString("c"))
+                        @item.Mark
                     </td>
                     <td>
                         <a asp-action="AtualizarProduto" class="btn btn-success" asp-route-id="@item.Id">

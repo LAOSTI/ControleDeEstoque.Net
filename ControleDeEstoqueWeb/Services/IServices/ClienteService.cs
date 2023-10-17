@@ -1,6 +1,8 @@
 ﻿using ControleDeEstoqueWeb.Models;
 using ControleDeEstoqueWeb.Services.IServices;
 using ControleDeEstoqueWeb.Utils;
+using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.Eventing.Reader;
 
 namespace ControleDeEstoqueWeb.Services
 {
@@ -20,22 +22,32 @@ namespace ControleDeEstoqueWeb.Services
 			return await response.ReadContentAs<List<ClienteModel>>();
 		}
 
-		public Task<ClienteModel> FindClientesById(long id)
+		public async Task<ClienteModel> FindClientesById(long id)
 		{
-			throw new NotImplementedException();
+			var response = await _client.GetAsync($"{BasePath}/{id}");
+			return await response.ReadContentAs<ClienteModel>();
 		}
 		
-		public Task<ClienteModel> CreateClientes(ClienteModel model)
+		public async Task<ClienteModel> CreateClientes(ClienteModel model)
 		{
-			throw new NotImplementedException();
+			var response = await _client.PostAsJson<ClienteModel>(BasePath, model);
+			if (response.IsSuccessStatusCode)
+				return await response.ReadContentAs<ClienteModel>();
+			else throw new Exception("Algo deu errado na chamada da API");
 		}
-		public Task<ClienteModel> UpdateClientes(ClienteModel model)
+		public async Task<ClienteModel> UpdateClientes(ClienteModel model)
 		{
-			throw new NotImplementedException();
+			var response = await _client.PutAsJson<ClienteModel>(BasePath, model);
+			if (response.IsSuccessStatusCode)
+				return await response.ReadContentAs<ClienteModel>();
+			else throw new Exception("Algo deu errado na chamada da API");
 		}
-		public Task<bool> DeleteClientes(long id)
+		public async Task<bool> DeleteClientes(long id)
 		{
-			throw new NotImplementedException();
+			var response = await _client.DeleteAsync($"{BasePath}/{id}");
+			if (response.IsSuccessStatusCode)
+				return await response.ReadContentAs<bool>();
+			else throw new Exception("Algo deu errado na chamada da API");
 		}
 	}
 }

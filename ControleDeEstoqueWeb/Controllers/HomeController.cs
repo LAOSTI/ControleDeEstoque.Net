@@ -18,7 +18,7 @@ namespace ControleDeEstoqueWeb.Controllers
 			return View();
 		}
 
-		public IActionResult Privacy()
+		public IActionResult LPMSobre()
 		{
 			return View();
 		}

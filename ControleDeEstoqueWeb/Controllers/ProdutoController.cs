@@ -27,7 +27,7 @@ namespace ControleDeEstoqueWeb.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-                var response = await _productServices.CreateProduct(model);
+                var response = await _productServices.CriarProduto(model);
 				if (response != null) return RedirectToAction(nameof(ProdutoIndex));
                 
             }
@@ -44,7 +44,7 @@ namespace ControleDeEstoqueWeb.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-                var response = await _productServices.UpdateProduct(model);
+                var response = await _productServices.AtualizarProduto(model);
 				if (response != null) return RedirectToAction(nameof(ProdutoIndex));
                 
             }

@@ -15,4 +15,8 @@ html {
 
 body {
   margin-bottom: 60px;
+  background: #d3d3d3;
+}
+.home{
+    text-align:left;
 }

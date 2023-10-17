@@ -19,6 +19,7 @@ namespace ControleDeEstoqueAPI.Model
 
         [Column("amount")]
 		[Required]
+        [Range(1, 10000)]
 		public int Amount { get; set; }
 
         [Column("classification")]

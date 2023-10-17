@@ -6,8 +6,8 @@ namespace ControleDeEstoqueWeb.Services.IServices
 	{
 		Task<IEnumerable<ProductModel>> FindAllProducts();
 		Task<ProductModel> FindProductById(long id);
-		Task<ProductModel> CreateProduct(ProductModel model);
-		Task<ProductModel> UpdateProduct(ProductModel model);
+		Task<ProductModel> CriarProduto(ProductModel model);
+		Task<ProductModel> AtualizarProduto(ProductModel model);
 		Task<bool> DeleteProductById(long id);
 	}
 }

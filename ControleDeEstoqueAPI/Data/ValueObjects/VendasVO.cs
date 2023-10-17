@@ -5,7 +5,8 @@ namespace ControleDeEstoqueAPI.Data.ValueObjects
 {
 	public class VendasVO
 	{
-		public DateTime data_venda { get; set; }
+        public long Id { get; set; }
+        public DateTime data_venda { get; set; }
 		public double valor { get; set; }
 		public string produto { get; set; }
 		public int quantidade { get; set; }
