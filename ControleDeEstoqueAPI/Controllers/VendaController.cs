@@ -30,14 +30,14 @@ namespace ControleDeEstoqueAPI.Controllers
 			return Ok(venda);
 		}
 		[HttpPost]
-		public async Task<ActionResult<VendasVO>> Create(VendasVO vo)
+		public async Task<ActionResult<VendasVO>> Create([FromBody]VendasVO vo)
 		{
 			if(vo==null) return BadRequest();
 			var venda = await _repository.Create(vo);
 			return Ok(venda);
 		}
 		[HttpPut]
-		public async Task<ActionResult<VendasVO>> Update(VendasVO vo)
+		public async Task<ActionResult<VendasVO>> Update([FromBody]VendasVO vo)
 		{
 			if(vo==null) return BadRequest();
 			var venda = await _repository.Update(vo);

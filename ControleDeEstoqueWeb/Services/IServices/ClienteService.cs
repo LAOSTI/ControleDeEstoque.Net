@@ -1,12 +1,10 @@
 ﻿using ControleDeEstoqueWeb.Models;
 using ControleDeEstoqueWeb.Services.IServices;
 using ControleDeEstoqueWeb.Utils;
-using System.Diagnostics.CodeAnalysis;
-using System.Diagnostics.Eventing.Reader;
 
 namespace ControleDeEstoqueWeb.Services
 {
-	public class ClienteService : IClienteServices
+    public class ClienteService : IClienteServices
 	{
 		private readonly HttpClient _client;
 		public const string BasePath = "api/v1/Cliente";
@@ -15,29 +13,26 @@ namespace ControleDeEstoqueWeb.Services
 		{
 			_client = client ?? throw new ArgumentNullException(nameof(client));
 		}
-
 		public async Task<IEnumerable<ClienteModel>> FindAllClientes()
 		{
 			var response = await _client.GetAsync(BasePath);
 			return await response.ReadContentAs<List<ClienteModel>>();
 		}
-
 		public async Task<ClienteModel> FindClientesById(long id)
 		{
 			var response = await _client.GetAsync($"{BasePath}/{id}");
 			return await response.ReadContentAs<ClienteModel>();
 		}
-		
 		public async Task<ClienteModel> CreateClientes(ClienteModel model)
 		{
-			var response = await _client.PostAsJson<ClienteModel>(BasePath, model);
+			var response = await _client.PostAsJson(BasePath, model);
 			if (response.IsSuccessStatusCode)
 				return await response.ReadContentAs<ClienteModel>();
 			else throw new Exception("Algo deu errado na chamada da API");
 		}
 		public async Task<ClienteModel> UpdateClientes(ClienteModel model)
 		{
-			var response = await _client.PutAsJson<ClienteModel>(BasePath, model);
+			var response = await _client.PutAsJson(BasePath, model);
 			if (response.IsSuccessStatusCode)
 				return await response.ReadContentAs<ClienteModel>();
 			else throw new Exception("Algo deu errado na chamada da API");

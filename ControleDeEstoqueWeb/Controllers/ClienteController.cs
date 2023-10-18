@@ -1,7 +1,6 @@
 ﻿using ControleDeEstoqueWeb.Models;
 using ControleDeEstoqueWeb.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics.CodeAnalysis;
 
 namespace ControleDeEstoqueWeb.Controllers
 {
@@ -11,55 +10,58 @@ namespace ControleDeEstoqueWeb.Controllers
 
         public ClienteController(IClienteServices clienteServices)
         {
-            this._clienteServices = clienteServices ?? throw new ArgumentNullException(nameof(clienteServices));
+            _clienteServices = clienteServices ?? throw new ArgumentNullException(nameof(clienteServices));
         }
-
-        public async Task<IActionResult> ClienteIndex()
+        
+        public async Task<IActionResult> Index()
         {
             var clientes = await _clienteServices.FindAllClientes();
             return View(clientes);
         }
-        public async Task<IActionResult> CriarCliente()
+        
+        public IActionResult CadastrarCliente()
         {
             return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> CriarCliente(ClienteModel model)
+
+        public async Task<IActionResult> InserirCliente(ClienteModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var cliente = await _clienteServices.CreateClientes(model);
-                return View(cliente);
+                if (cliente != null) return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
-        public async Task<IActionResult> AtualizarCliente(int id)
-        {
-            var model = await _clienteServices.FindClientesById (id);
-            if(model != null)return View(model);
-            return NotFound();
-        }
-        [HttpPost]
-        public async Task<IActionResult> AtualizarCliente(ClienteModel model)
-        {
-            if(ModelState.IsValid)
-            {
-                var response = await _clienteServices.UpdateClientes(model);
-                if(response != null) return RedirectToAction(nameof(ClienteIndex));
-            }
-            return View(model);
-        }
-        public async Task<IActionResult> DeletarCliente(int id)
+
+        public async Task<IActionResult> EditarCliente(int id)
         {
             var model = await _clienteServices.FindClientesById(id);
             if (model != null) return View(model);
             return NotFound();
         }
-        [HttpDelete]
+
+        public async Task<IActionResult> AtualizarCliente(ClienteModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var response = await _clienteServices.UpdateClientes(model);
+                if (response != null) return RedirectToAction(nameof(Index));
+            }
+            return View(model);
+        }
+
+        public async Task<IActionResult> ClienteIndex(int id)
+        {
+            var model = await _clienteServices.FindClientesById(id);
+            if (model != null) return View(model);
+            return NotFound();
+        }
+
         public async Task<IActionResult> DeletarCliente(ClienteModel model)
         {
             var response = await _clienteServices.DeleteClientes(model.Id);
-            if(response)return RedirectToAction(nameof(ClienteIndex));
+            if (response) return RedirectToAction(nameof(Index));
             return View(model);
         }
     }

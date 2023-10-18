@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ControleDeEstoqueWeb.Models.ClienteModel >
+<br />
+<br />
+<div class="container p-4 border">
+    <div class="row pb-2 ">
+        <div class="col">
+            <h1 class="text-primary">Lista de Clientes</h1>
+        </div>
+        <div class="col text-end pt-1 ">
+            <a asp-action="CadastrarCliente" class="btn btn-outline-primary">
+                <i class="fas fa-plus"></i>Cadastrar Novo Cliente
+            </a>
+        </div>
+    </div>
+    <table class="table ">
+        <thead>
+            <tr>
+                <td>
+                    Nome
+                </td>
+                <td>
+                    CPF|CNPJ
+                </td>
+                <td>
+                    RG
+                </td>
+                <td>
+                    Rua
+                </td>
+                <td>
+                    Número
+                </td>
+                <td>
+                    Bairro
+                </td>
+                <td>
+                    Cidade
+                </td>
+                <td>
+                    Estado
+                </td>
+                <td>
+                    Pais
+                </td>
+                <td>
+                    Telefone
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.name
+                    </td>
+                    <td>
+                        @item.cpf_cnpj
+                    </td>
+                    <td>
+                        @item.rg
+                    </td>
+                    <td>
+                        @item.rua
+                    </td>
+                    <td>
+                        @((item.numero).ToString("c"))
+                    </td>
+                    <td>
+                        @item.bairro
+                    </td>
+                    <td>
+                        @item.cidade
+                    </td>
+                    <td>
+                        @item.estado
+                    </td>
+                    <td>
+                        @item.pais
+                    </td>
+                    <td>
+                        @item.telefone
+                    </td>
+                    <td>
+                        <a class="btn btn-success" asp-action="EditarCliente" asp-route-id="@item.Id">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="btn btn-danger" asp-action="ClienteIndex" asp-route-id="@item.Id">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
