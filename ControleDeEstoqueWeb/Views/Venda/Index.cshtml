@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ControleDeEstoqueWeb.Models.VendasModel >
+<br />
+<br />
+<div class="container p-4 border">
+    <div class="row pb-2 ">
+        <div class="col">
+            <h1 class="text-primary">Lista de Vendas</h1>
+        </div>
+        <div class="col text-end pt-1 ">
+            <a asp-action="CadastrarVendas" class="btn btn-outline-primary">
+                <i class="fas fa-plus"></i>Cadastrar Nova Venda
+            </a>
+        </div>
+    </div>
+    <table class="table ">
+        <thead>
+            <tr>
+                <td>
+                    Data
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Produto
+                </td>
+                <td>
+                    Quantidade
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @((item.data_venda).ToString("dd/MM/yyyy"))
+                    </td>
+                    <td>
+                        @((item.valor).ToString("c"))
+                    </td>
+                    <td>
+                        @item.produto
+                    </td>
+                    <td>
+                        @((item.quantidade).ToString("d"))
+                    </td>
+                    <td>
+                        <a class="btn btn-success" asp-action="EditarVenda" asp-route-id="@item.Id">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="btn btn-danger" asp-action="VendaIndex" asp-route-id="@item.Id">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

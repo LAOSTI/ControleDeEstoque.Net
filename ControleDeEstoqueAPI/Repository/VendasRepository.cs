@@ -46,6 +46,7 @@ namespace ControleDeEstoqueAPI.Repository
 				Vendas vendas = await _context.Vendas.Where(v => v.Id == id).FirstOrDefaultAsync();
 				if (vendas == null) return false;
 				_context.Vendas.Remove(vendas);
+				await _context.SaveChangesAsync();
 				return true;
 			}
 			catch (Exception)

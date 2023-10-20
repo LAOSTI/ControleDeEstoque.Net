@@ -3,7 +3,7 @@
     <input asp-for="Id" hidden />
     <br />
     <div class="container border p-3 ">
-        <h1 class="text-primary">Atualizar Produto</h1>
+        <h1 class="text-primary">Deletar Cliente</h1>
         <hr />
         <div class="row ">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -11,73 +11,63 @@
                 <label asp-for="name" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="name" class="form-control" />
-                <span asp-validation-for="name" class="text-danger"></span>
+                <input asp-for="name" disabled class="form-contdisabled rol" />
             </div>
             <div class="col-2">
                 <label asp-for="cpf_cnpj" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="cpf_cnpj" class="form-control" />
-                <span asp-validation-for="cpf_cnpj" class="text-danger"></span>
+                <input asp-for="cpf_cnpj" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="rg" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="rg" class="form-control" />
-                <span asp-validation-for="rg" class="text-danger"></span>
+                <input asp-for="rg" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="numero" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="numero" class="form-control" />
-                <span asp-validation-for="numero" class="text-danger"></span>
+                <input asp-for="numero" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="bairro" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="bairro" class="form-control" />
-                <span asp-validation-for="bairro" class="text-danger"></span>
+                <input asp-for="bairro" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="cidade" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="cidade" class="form-control" />
-                <span asp-validation-for="cidade" class="text-danger"></span>
+                <input asp-for="cidade" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="estado" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="estado" class="form-control" />
-                <span asp-validation-for="estado" class="text-danger"></span>
+                <input asp-for="estado" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="pais" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="pais" class="form-control" />
-                <span asp-validation-for="pais" class="text-danger"></span>
+                <input asp-for="pais" disabled class="form-control" />
             </div>
             <div class="col-2">
                 <label asp-for="telefone" class="control-label pt-2" style="font-size=20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="telefone" class="form-control" />
-                <span asp-validation-for="telefone" class="text-danger"></span>
+                <input asp-for="telefone" disabled class="form-control" />
             </div>
             <div class="col-5 offset-2">
                 <a asp-action="Index" class="btn-primary btn form-control">Voltar para Lista</a>
             </div>
             <div class="col-5">
-                <input type="submit" value="Delete" class="btn btn-success form-control" />
+                <input type="submit" value="Deletar" class="btn btn-success form-control" />
             </div>
         </div>
-    </div>
     </div>
 </form>
 @section Scripts{

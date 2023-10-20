@@ -14,52 +14,52 @@ namespace ControleDeEstoqueWeb.Controllers
             _vendasService = vendasService ?? throw new ArgumentNullException(nameof(vendasService));
         }
 
-        public async Task<IActionResult> VendasIndex()
+        public async Task<IActionResult> Index()
         {
             var vendas = await _vendasService.FindAllVenda();
             return View(vendas);
         }
-        public async Task<IActionResult> CriarVendas()
+        public IActionResult CadastrarVendas()
         {
             return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> CriarVendas(VendasModel model)
+
+        public async Task<IActionResult> InserirVenda(VendasModel model)
         {
             if (ModelState.IsValid)
             {
                 var response = await _vendasService.CriarVenda(model);
-                if (response != null) return RedirectToAction(nameof(VendasIndex));
+                if (response != null) return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
-        public async Task<IActionResult> AtualizarVenda(long id)
+        public async Task<IActionResult> EditarVenda(long id)
         {
             var model = await _vendasService.FindVendaById(id);
             if (model != null) return View(model);
             return NotFound();
         }
-        [HttpPut]
+
         public async Task<IActionResult> AtualizarVenda(VendasModel model)
         {
             if (ModelState.IsValid) 
             {
-                var response = await _vendasService.AtualizarVenda(model);
-                if (response != null) return RedirectToAction(nameof(VendasIndex));
+                var response = await _vendasService.AtualizarVendas(model);
+                if (response != null) return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
-        public async Task<IActionResult> DeleteVenda(long id)
+        public async Task<IActionResult> VendaIndex(long id)
         {
             var model = await _vendasService.FindVendaById(id);
             if(model !=null)return View(model);
             return NotFound();
         }
-        [HttpDelete]
-        public async Task<IActionResult> DeleteVenda(VendasModel model)
+
+        public async Task<IActionResult> DeletarVenda(VendasModel model)
         {
             var response = await _vendasService.DeleteVenda(model.Id);
-            if(response)return RedirectToAction(nameof(VendasIndex));
+            if(response)return RedirectToAction(nameof(Index));
             return View(model);
         }
     }

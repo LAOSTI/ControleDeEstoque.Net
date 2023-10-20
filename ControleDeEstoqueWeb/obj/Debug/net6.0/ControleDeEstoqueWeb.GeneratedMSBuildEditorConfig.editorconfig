@@ -52,8 +52,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZWxldGVQcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/ProdutoIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQcm9kdXRvSW5kZXguY3NodG1s
+[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/Error.cshtml]
@@ -62,6 +62,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/CadastrarVendas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcQ2FkYXN0cmFyVmVuZGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/EditarVenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcRWRpdGFyVmVuZGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/VendaIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcVmVuZGFJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/_ViewImports.cshtml]

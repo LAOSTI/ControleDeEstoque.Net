@@ -7,7 +7,7 @@ namespace ControleDeEstoqueWeb.Services.IServices
 		Task<IEnumerable<VendasModel>> FindAllVenda();
 		Task<VendasModel> FindVendaById(long id);
 		Task<VendasModel> CriarVenda(VendasModel model);
-		Task<VendasModel> AtualizarVenda(VendasModel model);
+		Task<VendasModel> AtualizarVendas(VendasModel model);
 		Task<bool> DeleteVenda(long id);
 	}
 }

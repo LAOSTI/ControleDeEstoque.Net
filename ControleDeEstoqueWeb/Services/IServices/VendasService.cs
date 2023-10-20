@@ -8,7 +8,7 @@ namespace ControleDeEstoqueWeb.Services
 	public class VendasService : IVendasService
 	{
 		private readonly HttpClient _client;
-		public const string BasePath = "api/v1/Vendas";
+		public const string BasePath = "api/v1/Venda";
 
 		public VendasService(HttpClient client)
 		{
@@ -26,24 +26,24 @@ namespace ControleDeEstoqueWeb.Services
 		}
 		public async Task<VendasModel> CriarVenda(VendasModel model)
 		{
-			var response = await _client.PostAsJson<VendasModel>(BasePath, model);
+			var response = await _client.PostAsJson(BasePath, model);
 			if (response.IsSuccessStatusCode)
 				return await response.ReadContentAs<VendasModel>();
 			else throw new Exception("Algo deu errado na chamada da API");
 		}
-		public async Task<VendasModel> AtualizarVenda(VendasModel model)
+		public async Task<VendasModel> AtualizarVendas(VendasModel model)
 		{
-			var response = await _client.PutAsJson<VendasModel>(BasePath, model);
+			var response = await _client.PutAsJson(BasePath, model);
 			if (response.IsSuccessStatusCode)
 				return await response.ReadContentAs<VendasModel>();
 			else throw new Exception("Algo deu errado na chamada da API");
 		}
-		public async Task<bool> DeleteVenda(long id)
-		{
-			var response = await _client.DeleteAsync($"{BasePath}/{id}");
-			if (response.IsSuccessStatusCode)
-				return await response.ReadContentAs<bool>();
-			else throw new Exception("Algo deu errado na chamada da API");
-		}
-	}
+        public async Task<bool> DeleteVenda(long id)
+        {
+            var response = await _client.DeleteAsync($"{BasePath}/{id}");
+            if (response.IsSuccessStatusCode)
+                return await response.ReadContentAs<bool>();
+            else throw new Exception("Algo deu errado na chamada da API");
+        }
+    }
 }

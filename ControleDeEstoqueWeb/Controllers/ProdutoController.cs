@@ -13,22 +13,22 @@ namespace ControleDeEstoqueWeb.Controllers
 			_productServices = productServices ?? throw new ArgumentNullException(nameof(productServices));
 		}
 
-		public async Task<IActionResult> ProdutoIndex()
+		public async Task<IActionResult> Index()
 		{
 			var produtos = await _productServices.FindAllProducts();
 			return View(produtos);
 		}
-		public async Task<IActionResult> CriarProduto()
+		public IActionResult CriarProduto()
 		{
 			return View();
 		}
-		[HttpPost]
-		public async Task<IActionResult> CriarProduto(ProductModel model)
+
+		public async Task<IActionResult> InserirProduto(ProductModel model)
 		{
 			if (ModelState.IsValid)
 			{
                 var response = await _productServices.CriarProduto(model);
-				if (response != null) return RedirectToAction(nameof(ProdutoIndex));
+				if (response != null) return RedirectToAction(nameof(Index));
                 
             }
             return View(model);
@@ -39,13 +39,13 @@ namespace ControleDeEstoqueWeb.Controllers
 			if (model != null) return View(model);
             return NotFound();
 		}
-		[HttpPost]
-		public async Task<IActionResult> AtualizarProduto(ProductModel model)
+
+		public async Task<IActionResult> EditarProduto(ProductModel model)
 		{
 			if (ModelState.IsValid)
 			{
                 var response = await _productServices.AtualizarProduto(model);
-				if (response != null) return RedirectToAction(nameof(ProdutoIndex));
+				if (response != null) return RedirectToAction(nameof(Index));
                 
             }
             return View(model);
@@ -56,11 +56,11 @@ namespace ControleDeEstoqueWeb.Controllers
 			if (model != null) return View(model);
             return NotFound();
 		}
-		[HttpPost]
-		public async Task<IActionResult> DeleteProduto(ProductModel model)
+
+		public async Task<IActionResult> DeletarProduto(ProductModel model)
 		{
                 var response = await _productServices.DeleteProductById(model.Id);
-				if (response) return RedirectToAction(nameof(ProdutoIndex));
+				if (response) return RedirectToAction(nameof(Index));
 
             return View(model);
         }
