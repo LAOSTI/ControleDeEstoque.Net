@@ -8,28 +8,34 @@
         <div class="row ">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="col-2">
-                <label asp-for="data_venda" class="control-label pt-2" style="font-size=20px;"></label>
+                <label asp-for="DataVenda" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="data_venda" disabled class="form-contdisabled rol" />
+                <input asp-for="DataVenda" disabled class="form-contdisabled rol" />
             </div>
             <div class="col-2">
-                <label asp-for="valor" class="control-label pt-2" style="font-size=20px;"></label>
+                <label asp-for="NomeCliente" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="valor" disabled class="form-control" />
+                <input asp-for="NomeCliente" disabled class="form-contdisabled rol" />
             </div>
             <div class="col-2">
-                <label asp-for="produto" class="control-label pt-2" style="font-size=20px;"></label>
+                <label asp-for="Valor" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="produto" disabled class="form-control" />
+                <input asp-for="Valor" disabled class="form-control" />
             </div>
             <div class="col-2">
-                <label asp-for="quantidade" class="control-label pt-2" style="font-size=20px;"></label>
+                <label asp-for="IdProduto" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="quantidade" disabled class="form-control" />
+                <input asp-for="IdProduto" disabled class="form-control" />
+            </div>
+            <div class="col-2">
+                <label asp-for="Quantidade" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Quantidade" disabled class="form-control" />
             </div>
             <div class="col-5 offset-2">
                 <a asp-action="Index" class="btn-primary btn form-control">Voltar para Lista</a>

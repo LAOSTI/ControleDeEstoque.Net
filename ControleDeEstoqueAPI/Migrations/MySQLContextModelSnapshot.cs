@@ -24,70 +24,70 @@ namespace ControleDeEstoqueAPI.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .HasColumnName("id");
+                        .HasColumnName("Id");
 
-                    b.Property<string>("bairro")
+                    b.Property<string>("Bairro")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)")
-                        .HasColumnName("bairro");
+                        .HasColumnName("Bairro");
 
-                    b.Property<string>("cidade")
+                    b.Property<string>("Cidade")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)")
-                        .HasColumnName("cidade");
+                        .HasColumnName("Cidade");
 
-                    b.Property<string>("cpf_cnpj")
+                    b.Property<string>("CpfCnpj")
                         .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("varchar(14)")
-                        .HasColumnName("cpf_cnpj");
+                        .HasColumnName("CpfCnpj");
 
-                    b.Property<string>("estado")
+                    b.Property<string>("Estado")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)")
-                        .HasColumnName("estado");
+                        .HasColumnName("Estado");
+
+                    b.Property<int>("Numero")
+                        .HasMaxLength(10)
+                        .HasColumnType("int")
+                        .HasColumnName("Numero");
+
+                    b.Property<string>("Pais")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("Pais");
+
+                    b.Property<string>("Rg")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)")
+                        .HasColumnName("Rg");
+
+                    b.Property<string>("Rua")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Rua");
+
+                    b.Property<string>("Telefone")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)")
+                        .HasColumnName("Telefone");
 
                     b.Property<string>("name")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)")
-                        .HasColumnName("name");
-
-                    b.Property<int>("numero")
-                        .HasMaxLength(10)
-                        .HasColumnType("int")
-                        .HasColumnName("numero");
-
-                    b.Property<string>("pais")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("pais");
-
-                    b.Property<string>("rg")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("varchar(10)")
-                        .HasColumnName("rg");
-
-                    b.Property<string>("rua")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("rua");
-
-                    b.Property<string>("telefone")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("varchar(15)")
-                        .HasColumnName("telefone");
+                        .HasColumnName("Name");
 
                     b.HasKey("Id");
 
-                    b.ToTable("cliente");
+                    b.ToTable("Cliente");
                 });
 
             modelBuilder.Entity("ControleDeEstoqueAPI.Model.Product", b =>
@@ -95,37 +95,37 @@ namespace ControleDeEstoqueAPI.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .HasColumnName("id");
+                        .HasColumnName("Id");
 
                     b.Property<int>("Amount")
                         .HasColumnType("int")
-                        .HasColumnName("amount");
+                        .HasColumnName("Amount");
 
                     b.Property<string>("Classification")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)")
-                        .HasColumnName("classification");
+                        .HasColumnName("Classification");
 
                     b.Property<string>("Mark")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)")
-                        .HasColumnName("mark");
+                        .HasColumnName("Mark");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)")
-                        .HasColumnName("name");
+                        .HasColumnName("Name");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(65,30)")
-                        .HasColumnName("price");
+                        .HasColumnName("Price");
 
                     b.HasKey("Id");
 
-                    b.ToTable("product");
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("ControleDeEstoqueAPI.Model.Vendas", b =>
@@ -133,32 +133,37 @@ namespace ControleDeEstoqueAPI.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .HasColumnName("id");
+                        .HasColumnName("Id");
 
-                    b.Property<DateTime>("data_venda")
+                    b.Property<DateTime>("DataVenda")
                         .HasMaxLength(20)
                         .HasColumnType("datetime(6)")
-                        .HasColumnName("data_venda");
+                        .HasColumnName("DataVenda");
 
-                    b.Property<string>("produto")
+                    b.Property<int>("IdProduto")
+                        .HasMaxLength(150)
+                        .HasColumnType("int")
+                        .HasColumnName("IdProduto");
+
+                    b.Property<string>("NomeCliente")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)")
-                        .HasColumnName("produto");
+                        .HasColumnName("NomeCliente");
 
-                    b.Property<int>("quantidade")
+                    b.Property<int>("Quantidade")
                         .HasMaxLength(150)
                         .HasColumnType("int")
-                        .HasColumnName("quantidade");
+                        .HasColumnName("Quantidade");
 
-                    b.Property<double>("valor")
+                    b.Property<double>("Valor")
                         .HasMaxLength(10)
                         .HasColumnType("double")
-                        .HasColumnName("valor");
+                        .HasColumnName("Valor");
 
                     b.HasKey("Id");
 
-                    b.ToTable("vendas");
+                    b.ToTable("Vendas");
                 });
 #pragma warning restore 612, 618
         }

@@ -7,32 +7,45 @@
         <div class="row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="col-2">
-                <label asp-for="data_venda" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="DataVenda" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="data_venda" class="form-control" />
-                <span asp-validation-for="data_venda" class="text-danger"></span>
+                <input asp-for="DataVenda" class="form-control" />
+                <span asp-validation-for="DataVenda" class="text-danger"></span>
             </div>
             <div class="col-2">
-                <label asp-for="valor" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="NomeCliente" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="valor" class="form-control" />
-                <span asp-validation-for="valor" class="text-danger"></span>
+                <input asp-for="NomeCliente" class="form-control" />
+                <span asp-validation-for="NomeCliente" class="text-danger"></span>
             </div>
             <div class="col-2">
-                <label asp-for="produto" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="Valor" class="control-label pt-2" style="font-size:20px;"></label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="produto" class="form-control" />
-                <span asp-validation-for="produto" class="text-danger"></span>
+                <input asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
             <div class="col-2">
-                <label asp-for="quantidade" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="IdProduto" class="control-label pt-2" style="font-size:20px;">Produto</label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="quantidade" class="form-control" />
-                <span asp-validation-for="quantidade" class="text-danger"></span>
+                <select class="col-12 pb-3" asp-for="IdProduto" asp-items="@ViewBag.Produtos">
+                    <option>Por favor selecione: </option>
+                </select>
+            </div>
+            @* <div class="col-10 pb-3">
+            <div hidden>@Html.EditorFor(model => model.Produto, new { htmlAttributes = new { @class = "form-control", id = "produto" } })</div>
+            @Html.DropDownList("select", ViewBag.Produtos as SelectList, new { @id = "produto_drop_down", @class = "col-12 pb-3" })
+            @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+            </div> *@
+            <div class="col-2">
+                <label asp-for="Quantidade" class="control-label pt-2" style="font-size:20px;"></label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
             </div>
             <div class="col-5 offset-2">
                 <a asp-action="Index" class="btn-primary btn form-control">Voltar para Lista</a>
@@ -44,5 +57,5 @@
     </div>
 </form>
 @section Scripts{
-    <partial data_venda="_ValidationScriptsPartial" />
+    <partial DataVenda="_ValidationScriptsPartial" />
 }

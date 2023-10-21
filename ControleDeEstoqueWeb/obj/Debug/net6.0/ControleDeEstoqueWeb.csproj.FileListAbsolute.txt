@@ -36,6 +36,8 @@ C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\bin\Debug\ne
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\bin\Debug\net6.0\ControleDeEstoqueWeb.runtimeconfig.json
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\bin\Debug\net6.0\ControleDeEstoqueWeb.dll
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\bin\Debug\net6.0\ControleDeEstoqueWeb.pdb
+C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.csproj.AssemblyReference.cache
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.AssemblyInfoInputs.cache
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.AssemblyInfo.cs
@@ -53,6 +55,7 @@ C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\ne
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\scopedcss\bundle\ControleDeEstoqueWeb.styles.css
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\scopedcss\projectbundle\ControleDeEstoqueWeb.bundle.scp.css
+C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.csproj.CopyComplete
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.dll
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\refint\ControleDeEstoqueWeb.dll
 C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\obj\Debug\net6.0\ControleDeEstoqueWeb.pdb

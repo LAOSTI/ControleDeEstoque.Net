@@ -7,14 +7,14 @@ namespace ControleDeEstoqueAPI.Data.ValueObjects
 	{
         public long Id { get; set; }
         public string name { get; set; }
-		public string cpf_cnpj { get; set; }
-		public string rg { get; set; }
-		public string rua { get; set; }
-		public int numero { get; set; }
-		public string bairro { get; set; }
-		public string cidade { get; set; }
-		public string estado { get; set; }
-		public string pais { get; set; }
-		public string telefone { get; set; }
+		public string CpfCnpj { get; set; }
+		public string Rg { get; set; }
+		public string Rua { get; set; }
+		public int Numero { get; set; }
+		public string Bairro { get; set; }
+		public string Cidade { get; set; }
+		public string Estado { get; set; }
+		public string Pais { get; set; }
+		public string Telefone { get; set; }
 	}
 }

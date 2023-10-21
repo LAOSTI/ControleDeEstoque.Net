@@ -7,7 +7,7 @@ namespace ControleDeEstoqueAPI.Model.Base
 	public class BaseEntity
 	{
 		[Key]
-		[Column("id")]
+		[Column("Id")]
 		public long Id { get; set; }
 	}
 }

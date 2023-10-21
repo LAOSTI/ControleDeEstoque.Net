@@ -9,5 +9,6 @@ namespace ControleDeEstoqueWeb.Services.IServices
 		Task<ProductModel> CriarProduto(ProductModel model);
 		Task<ProductModel> AtualizarProduto(ProductModel model);
 		Task<bool> DeleteProductById(long id);
+		Task<bool> DarBaixaNoEstoque(int idProduto, int quantidade);
 	}
 }

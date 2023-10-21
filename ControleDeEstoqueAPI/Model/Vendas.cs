@@ -4,24 +4,32 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ControleDeEstoqueAPI.Model
 {
-    [Table("vendas")]
+    [Table("Vendas")]
     public class Vendas : BaseEntity
     {
-        [Column("data_venda")]
+        [Column("NomeCliente")]
+        [Required]
+        [StringLength(150)]
+        public string NomeCliente { get; set; }
+
+        [Column("DataVenda")]
         [StringLength(20)]
-        public DateTime data_venda { get; set; }
-        [Column("valor")]
+        public DateTime DataVenda { get; set; }
+
+        [Column("Valor")]
         [Required]
         [StringLength(10)]
-        public double valor { get; set; }
-        [Column("produto")]
+        public double Valor { get; set; }
+
+        [Column("IdProduto")]
         [Required]
         [StringLength(150)]
-        public string produto { get; set; }
-        [Column("quantidade")]
+        public int IdProduto { get; set; }
+
+        [Column("Quantidade")]
         [Required]
         [StringLength(150)]
-        public int quantidade { get; set; }
+        public int Quantidade { get; set; }
 
     }
 }

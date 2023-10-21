@@ -1,6 +1,8 @@
 ﻿using ControleDeEstoqueWeb.Models;
 using ControleDeEstoqueWeb.Services.IServices;
 using ControleDeEstoqueWeb.Utils;
+using Microsoft.VisualBasic;
+using System.Text.Json;
 
 namespace ControleDeEstoqueWeb.Services
 {
@@ -17,7 +19,12 @@ namespace ControleDeEstoqueWeb.Services
 		public async Task<IEnumerable<ProductModel>> FindAllProducts()
 		{
 			var response = await _client.GetAsync(BasePath);
-			return await response.ReadContentAs<List<ProductModel>>();
+			var result = JsonSerializer.Deserialize<IEnumerable<ProductModel>>(response.Content.ReadAsStringAsync().Result, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+			
+			if(result == null)
+				return new List<ProductModel>();
+
+			return result;
 		}
 		public async Task<ProductModel> FindProductById(long id)
 		{
@@ -45,5 +52,16 @@ namespace ControleDeEstoqueWeb.Services
 			return await response.ReadContentAs<bool>();
 			else throw new Exception("Algo deu errado na chamada da API");
 		}
+
+        public async Task<bool> DarBaixaNoEstoque(int idProduto, int quantidade)
+        {
+			var product = await FindProductById(idProduto);
+
+			product.Amount -= quantidade;
+
+			await AtualizarProduto(product);
+
+			return true;
+        }
     }
 }

@@ -1,62 +1,60 @@
 ﻿using ControleDeEstoqueAPI.Model.Base;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics;
-using System.Net.NetworkInformation;
 
 namespace ControleDeEstoqueAPI.Model
 {
-	[Table("cliente")]
+    [Table("Cliente")]
 	public class Cliente : BaseEntity
 	{
-        [Column("name")]
+        [Column("Name")]
         [Required]
         [StringLength(150)]
         public string name { get; set; }
 
-        [Column("cpf_cnpj")]
+        [Column("CpfCnpj")]
         [Required]
         [StringLength(14)]
-        public string cpf_cnpj { get; set; }
+        public string CpfCnpj { get; set; }
 
-        [Column("rg")]
+        [Column("Rg")]
         [Required]
         [StringLength(10)]
-        public string rg { get; set; }
+        public string Rg { get; set; }
 
-        [Column("rua")]
+        [Column("Rua")]
         [Required]
         [StringLength(50)]
-        public string rua { get; set; }
+        public string Rua { get; set; }
 
-        [Column("numero")]
+        [Column("Numero")]
         [Required]
         [StringLength(10)]
-        public int numero { get; set; }
+        public int Numero { get; set; }
 
-        [Column("bairro")]
+        [Column("Bairro")]
         [Required]
         [StringLength(150)]
-        public string bairro { get; set; }
+        public string Bairro { get; set; }
 
-        [Column("cidade")]
+        [Column("Cidade")]
         [Required]
         [StringLength(150)]
-        public string cidade { get; set; }
+        public string Cidade { get; set; }
 
-        [Column("estado")]
+        [Column("Estado")]
         [Required]
         [StringLength(150)]
-        public string estado { get; set; }
+        public string Estado { get; set; }
 
-        [Column("pais")]
+        [Column("Pais")]
         [Required]
         [StringLength(100)]
-        public string pais { get; set; }
+        public string Pais { get; set; }
 
-        [Column("telefone")]
+        [Column("Telefone")]
         [Required]
         [StringLength(15)]
-        public string telefone { get; set; }
+        public string Telefone { get; set; }
     }
 }

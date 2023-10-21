@@ -22,7 +22,7 @@
                     CPF|CNPJ
                 </td>
                 <td>
-                    RG
+                    Rg
                 </td>
                 <td>
                     Rua
@@ -52,34 +52,34 @@
             {
                 <tr>
                     <td>
-                        @item.name
+                        @item.Name
                     </td>
                     <td>
-                        @item.cpf_cnpj
+                        @item.CpfCnpj
                     </td>
                     <td>
-                        @item.rg
+                        @item.Rg
                     </td>
                     <td>
-                        @item.rua
+                        @item.Rua
                     </td>
                     <td>
-                        @((item.numero).ToString("d"))
+                        @((item.Numero).ToString("d"))
                     </td>
                     <td>
-                        @item.bairro
+                        @item.Bairro
                     </td>
                     <td>
-                        @item.cidade
+                        @item.Cidade
                     </td>
                     <td>
-                        @item.estado
+                        @item.Estado
                     </td>
                     <td>
-                        @item.pais
+                        @item.Pais
                     </td>
                     <td>
-                        @item.telefone
+                        @item.Telefone
                     </td>
                     <td>
                         <a class="btn btn-success" asp-action="EditarCliente" asp-route-id="@item.Id">

@@ -15,8 +15,8 @@ namespace ControleDeEstoqueWeb.Controllers
 
 		public async Task<IActionResult> Index()
 		{
-			var produtos = await _productServices.FindAllProducts();
-			return View(produtos);
+			var Produtos = await _productServices.FindAllProducts();
+			return View(Produtos);
 		}
 		public IActionResult CriarProduto()
 		{

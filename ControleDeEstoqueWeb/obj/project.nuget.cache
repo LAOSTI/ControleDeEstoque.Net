@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7/xgF3AVymsG+uCgYAKnhGwraaLsIm++5H3I1N7inKLhfXcJO8rtJqLGgdz8QNRHTdj7b/o3eE09Rn22M/ov9w==",
+  "dgSpecHash": "I87oPBoF28Rje0YQi/7hCZjdJY9jAPp7VWjivn+8WAFg3w2BQZkbZIw7LG4QM9lF5DEQgniJkngqvhhybCJG4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Alberto\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

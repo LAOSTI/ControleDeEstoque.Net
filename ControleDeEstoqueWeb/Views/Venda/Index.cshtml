@@ -19,6 +19,9 @@
                     Data
                 </td>
                 <td>
+                    Nome do Cliente
+                </td>
+                <td>
                     Valor
                 </td>
                 <td>
@@ -34,16 +37,19 @@
             {
                 <tr>
                     <td>
-                        @((item.data_venda).ToString("dd/MM/yyyy"))
+                        @((item.DataVenda).ToString("dd/MM/yyyy"))
                     </td>
                     <td>
-                        @((item.valor).ToString("c"))
+                        @item.NomeCliente
                     </td>
                     <td>
-                        @item.produto
+                        @((item.Valor).ToString("c"))
                     </td>
                     <td>
-                        @((item.quantidade).ToString("d"))
+                        @item.IdProduto
+                    </td>
+                    <td>
+                        @((item.Quantidade).ToString("d"))
                     </td>
                     <td>
                         <a class="btn btn-success" asp-action="EditarVenda" asp-route-id="@item.Id">

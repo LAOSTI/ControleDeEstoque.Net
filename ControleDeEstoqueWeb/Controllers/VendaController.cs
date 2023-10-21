@@ -1,6 +1,7 @@
 ﻿using ControleDeEstoqueWeb.Models;
 using ControleDeEstoqueWeb.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics.CodeAnalysis;
 
 namespace ControleDeEstoqueWeb.Controllers
@@ -8,9 +9,11 @@ namespace ControleDeEstoqueWeb.Controllers
     public class VendaController : Controller
     {
         private IVendasService _vendasService;
+        private IProductServices _productServices;
 
-        public VendaController(IVendasService vendasService)
+        public VendaController(IVendasService vendasService, IProductServices productServices)
         {
+            _productServices = productServices ?? throw new ArgumentNullException(nameof(productServices));
             _vendasService = vendasService ?? throw new ArgumentNullException(nameof(vendasService));
         }
 
@@ -19,8 +22,10 @@ namespace ControleDeEstoqueWeb.Controllers
             var vendas = await _vendasService.FindAllVenda();
             return View(vendas);
         }
-        public IActionResult CadastrarVendas()
+        public async Task<IActionResult> CadastrarVendas()
         {
+            var listProducts = await _productServices.FindAllProducts();
+            ViewBag.Produtos = new SelectList(listProducts, "Id", "Name");
             return View();
         }
 
@@ -29,6 +34,9 @@ namespace ControleDeEstoqueWeb.Controllers
             if (ModelState.IsValid)
             {
                 var response = await _vendasService.CriarVenda(model);
+
+                await _productServices.DarBaixaNoEstoque(model.IdProduto, model.Quantidade);
+
                 if (response != null) return RedirectToAction(nameof(Index));
             }
             return View(model);
