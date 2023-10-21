@@ -9,85 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ControleDeEstoqueWeb
 build_property.RootNamespace = ControleDeEstoqueWeb
-build_property.ProjectDir = C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb\
+build_property.ProjectDir = C:\Users\Alberto\Desktop\Nova pasta\ControleDeEstoque.Net\ControleDeEstoqueWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Alberto\Desktop\ControleDeEstoque.Net\ControleDeEstoqueWeb
+build_property.MSBuildProjectDirectory = C:\Users\Alberto\Desktop\Nova pasta\ControleDeEstoque.Net\ControleDeEstoqueWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/CadastrarCliente.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/CadastrarCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRhc3RyYXJDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/ClienteIndex.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/ClienteIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDbGllbnRlSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/EditarCliente.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/EditarCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXJDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/Index.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Home/Index.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Home/LPMSobre.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Home/LPMSobre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMUE1Tb2JyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/AtualizarProduto.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/AtualizarProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBdHVhbGl6YXJQcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/CriarProduto.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/CriarProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmlhclByb2R1dG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/DeleteProduto.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/DeleteProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZWxldGVQcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/Index.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Produto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/Error.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/CadastrarVendas.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/CadastrarVendas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcQ2FkYXN0cmFyVmVuZGFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/EditarVenda.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/EditarVenda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcRWRpdGFyVmVuZGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/Index.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/VendaIndex.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Venda/VendaIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcVmVuZGFJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/_ViewImports.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/_ViewStart.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alberto/Desktop/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/_Layout.cshtml]
+[C:/Users/Alberto/Desktop/Nova pasta/ControleDeEstoque.Net/ControleDeEstoqueWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7qz1s6tw2q

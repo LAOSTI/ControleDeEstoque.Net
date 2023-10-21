@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj": {}
+    "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj": {
+    "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
         "projectName": "ControleDeEstoqueWeb",
-        "projectPath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
+        "projectPath": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\ControleDeEstoqueWeb.csproj",
         "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\obj\\",
+        "outputPath": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
