@@ -16,7 +16,7 @@ namespace ControleDeEstoqueWeb.Services
 		}
 		public async Task<IEnumerable<VendasModel>> FindAllVenda()
 		{
-			var response = await _client.GetAsync(BasePath);
+            var response = await _client.GetAsync(BasePath);
 			return await response.ReadContentAs<List<VendasModel>>();
 		}
 		public async Task<VendasModel> FindVendaById(long id)

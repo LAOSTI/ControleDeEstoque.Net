@@ -19,6 +19,7 @@ namespace ControleDeEstoqueWeb.Controllers
 
         public async Task<IActionResult> Index()
         {
+            //var produto = await _productServices.FindAllProducts();
             var vendas = await _vendasService.FindAllVenda();
             return View(vendas);
         }
@@ -31,6 +32,8 @@ namespace ControleDeEstoqueWeb.Controllers
 
         public async Task<IActionResult> InserirVenda(VendasModel model)
         {
+            var produto = await _productServices.FindProductById(model.IdProduto);
+            model.NomeProduto = produto.Name;
             if (ModelState.IsValid)
             {
                 var response = await _vendasService.CriarVenda(model);
@@ -44,12 +47,16 @@ namespace ControleDeEstoqueWeb.Controllers
         public async Task<IActionResult> EditarVenda(long id)
         {
             var model = await _vendasService.FindVendaById(id);
+            var listProducts = await _productServices.FindAllProducts();
+            ViewBag.Produtos = new SelectList(listProducts, "Id", "Name");
             if (model != null) return View(model);
             return NotFound();
         }
 
         public async Task<IActionResult> AtualizarVenda(VendasModel model)
         {
+            var produto = await _productServices.FindProductById(model.IdProduto);
+            model.NomeProduto = produto.Name;
             if (ModelState.IsValid) 
             {
                 var response = await _vendasService.AtualizarVendas(model);

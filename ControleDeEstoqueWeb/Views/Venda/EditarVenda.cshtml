@@ -7,14 +7,14 @@
         <div class="row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="col-2">
-                <label asp-for="DataVenda" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="DataVenda" class="control-label pt-2" style="font-size:20px;">Data da Venda</label>
             </div>
             <div class="col-10 pb-3">
                 <input asp-for="DataVenda" class="form-control" />
                 <span asp-validation-for="DataVenda" class="text-danger"></span>
             </div>
             <div class="col-2">
-                <label asp-for="NomeCliente" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="NomeCliente" class="control-label pt-2" style="font-size:20px;">Nome do Cliente</label>
             </div>
             <div class="col-10 pb-3">
                 <input asp-for="NomeCliente" class="form-control" />
@@ -28,11 +28,12 @@
                 <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
             <div class="col-2">
-                <label asp-for="IdProduto" class="control-label pt-2" style="font-size:20px;"></label>
+                <label asp-for="IdProduto" class="control-label pt-2" style="font-size:20px;">Nome do Produto</label>
             </div>
             <div class="col-10 pb-3">
-                <input asp-for="IdProduto" class="form-control" />
-                <span asp-validation-for="IdProduto" class="text-danger"></span>
+                <select class="col-12 pb-3" asp-for="IdProduto" asp-items="@ViewBag.Produtos">
+                    <option>Selecione um produto: </option>
+                </select>
             </div>
             <div class="col-2">
                 <label asp-for="Quantidade" class="control-label pt-2" style="font-size:20px;"></label>

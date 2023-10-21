@@ -30,6 +30,10 @@ namespace ControleDeEstoqueAPI.Model
         [Required]
         [StringLength(150)]
         public int Quantidade { get; set; }
-
+        
+        [Column("NomeProduto")]
+        [Required]
+        [StringLength(150)]
+        public string NomeProduto { get; set; }
     }
 }

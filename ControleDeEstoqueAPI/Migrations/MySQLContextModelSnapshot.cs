@@ -151,6 +151,12 @@ namespace ControleDeEstoqueAPI.Migrations
                         .HasColumnType("varchar(150)")
                         .HasColumnName("NomeCliente");
 
+                    b.Property<string>("NomeProduto")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)")
+                        .HasColumnName("NomeProduto");
+
                     b.Property<int>("Quantidade")
                         .HasMaxLength(150)
                         .HasColumnType("int")
