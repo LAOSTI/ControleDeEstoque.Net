@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zLlsleEqRnMCvkAEJj+5NX2irCpigdzODCa7wfH2np4=",
+  "Hash": "IwmEBMU33sbow4rooCz6oiR62bAHu/Qswty9X1L30vE=",
   "Source": "ControleDeEstoqueWeb",
   "BasePath": "_content/ControleDeEstoqueWeb",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\Images\\ImagemHome.png",
+      "Identity": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\Images\\JesielJS.png",
       "SourceId": "ControleDeEstoqueWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\",
       "BasePath": "_content/ControleDeEstoqueWeb",
-      "RelativePath": "Images/ImagemHome.png",
+      "RelativePath": "Images/JesielJS.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\ImagemHome.png"
+      "OriginalItemSpec": "wwwroot\\Images\\JesielJS.png"
     },
     {
       "Identity": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueWeb\\wwwroot\\js\\site.js",
