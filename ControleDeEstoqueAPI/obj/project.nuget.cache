@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "glXHgiH4fEiiKHB3fYvwbJMA9yh0pP4t7LYZLViWFcMstb6MYPN1lHIKquOTYqNEqC3i6utTJWmeqo65mbp5VA==",
+  "dgSpecHash": "phosWoYf4uL3O+R4qkjn6Z17q31JlaGIR83FUB4/bCH/Kupyl37OHJ3lVxeG3sKiSYW54MYNcHBb3uOWSnAzaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alberto\\Desktop\\Nova pasta\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj",
+  "projectFilePath": "C:\\Users\\Alberto\\Desktop\\ControleDeEstoque.Net\\ControleDeEstoqueAPI\\ControleDeEstoqueAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alberto\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Alberto\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
