@@ -1,5 +1,5 @@
 <h1> Controle de Estoque em C#/.NET 7 </h1>
-Status: Developing 🛠️
+Status: Complete
 <br></br>
 Este projeto é um sistema de controle de estoque desenvolvido em C#/.NET 7, utilizando ASP.NET para a construção do backend. O banco de dados é gerenciado pelo MySQL Workbench, e o servidor web WmapServer é empregado para hospedar os serviços.A iniciativa do projeto é de extensão universitária.
 <h2>Estrutura do Projeto</h2>
